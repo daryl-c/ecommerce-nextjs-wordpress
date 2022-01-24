@@ -1,0 +1,28 @@
+@import "@styles/util/__placeholder.scss";
+
+$color-link: blueviolet;
+
+.productPrice {
+  margin: .4em 0 0;
+}
+
+.productWrapper {
+	display: flex;
+}
+
+.productImage {
+	@extend %card-image;
+	width: 50%;
+	margin-right: 2em;
+	transform: rotate( 2deg ) scale(.9) translateY(-1em);
+	transition: transform .1s;
+  
+	&:hover {
+	  transform: rotate(-3deg) scale(1) translateY(-1em);
+	  transition: transform .2s;
+	}
+
+	& > span {
+		display: block !important;
+	}
+}

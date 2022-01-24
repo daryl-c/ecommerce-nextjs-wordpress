@@ -10,6 +10,9 @@
       ],
       "@data/*": [
         "src/data/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
       ]
     },
     "target": "es5",
@@ -34,7 +37,8 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx", 
+    "src/hooks/use-snipcart.js"
   ],
   "exclude": [
     "node_modules"
